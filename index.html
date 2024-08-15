@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Portfolio Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/2b05088d83.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Web Developer</p>
+        <h1>Hi, I'm <span>Subham</span><br />From Durgapur</h1>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="IMG_20221123_150012-1.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>My name is Subham Singh and I am learning full stack Web developer.
+            I have completed two internship in Internpe and prodigy infotech.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span>
+                <p>Designing Web interfaces</p>
+              </li>
+              <li> </li>
+              <li> </li>
+              <li><span>1 Year Coding Experience</span>
+                <p>learning full stack web devlopment</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024</span><br />Currently doing BTECH in Computer Science And Technology From Bengal College Of
+                Engineering & Technology Durgapur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="languages">
+    <div class="container">
+      <h1 class="sub-title">My coding Languages</h1>
+      <div class="languages-list">
+        <div>
+          <i class="fa-brands fa-python"></i>
+          <h2>Python</h2>
+          <p>Python is a high-level, versatile programming language renowned for its readability and simplicity, favored
+            for its wide range of applications from web development to data analysis.</p>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <h2>HTML</h2>
+          <p>HTML (Hypertext Markup Language) is a standard language used for creating and structuring the content of
+            web pages by using a system of tags to define elements such as headings, paragraphs, links, and images.</p>
+          <a href="https://en.wikipedia.org/wiki/HTML">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-css3-alt"></i>
+          <h2>CSS</h2>
+          <p>CSS (Cascading Style Sheets) is a stylesheet language utilized to control the visual presentation and
+            layout of HTML elements in web pages, enhancing their aesthetics and design.</p>
+          <a href="https://en.wikipedia.org/wiki/CSS">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-square-js"></i>
+          <h2>JavaScript</h2>
+          <p>JavaScript is a versatile programming language primarily used for adding interactivity, dynamic behavior,
+            and complex functionality to web pages, making them more engaging and responsive.</p>
+          <a href="https://en.wikipedia.org/wiki/JavaScript">Learn more</a>
+        </div>
+        <div>
+          <i class="c"><img src="images.png"></i>
+          <h2>C</h2>
+          <p>C is an imperative procedural language, supporting structured programming, lexical variable scope, and
+            recursion, with a static type system. It was designed to be compiled to provide low-level access to memory
+            and language constructs that map efficiently to machine instructions, all with minimal runtime support</p>
+          <a href="https://en.wikipedia.org/wiki/C_(programming_language)">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>subhamsingh2517@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> 7076774775 </p>
+
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
